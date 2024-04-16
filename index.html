@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe6e6; /* Light pink background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        textarea {
+            width: calc(100% - 30px);
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+            resize: vertical; /* Allow vertical resizing */
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus {
+            border-color: #4CAF50; /* Change border color on focus */
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #3e8e41;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            input[type="tel"],
+            textarea,
+            button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apply for a Job at AtomCyberForce 🇵🇸</h1>
+        <form id="jobApplicationForm" action="https://formspree.io/f/mbjnqrnw" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="fatherName">Father Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="skill">Skill:</label>
+                <input type="text" id="skill" name="skill" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience in Skill:</label>
+                <input type="text" id="experience" name="experience" required>
+            </div>
+            <div class="form-group">
+                <label for="currentJob">Current Job:</label>
+                <input type="text" id="currentJob" name="currentJob" required>
+            </div>
+            <div class="form-group">
+                <label for="maritalStatus">Marital Status:</label>
+                <input type="text" id="maritalStatus" name="maritalStatus" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="religion">Religion:</label>
+                <input type="text" id="religion" name="religion" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number (Whatsapp):</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="project">Upload Any of Your Project (Optional):</label>
+                <input type="tel" id="project" name="project" accept="image/*">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
